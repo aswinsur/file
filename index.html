@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>ElastiCache performance benchmarking results</title>
+    <title>"Redis Performance on ElastiCache: Graviton and x86 Node Benchmarks"</title>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <style>
         body {
@@ -81,9 +81,8 @@
 </head>
 <body>
     <div class="container">
-        <h2>ElastiCache cluster (EC_CLUSTER_TYPE) performance benchmark result (Graviton vs x86 nodes)</h2>
-        <p>Note: It may take upto 15-20 minutes to complete the benchmarking. If you do not see any data below, please refresh the page again after 15 minutes.</p>
-
+        <h2>"Redis Performance on ElastiCache: Graviton and x86 Node Benchmarks"</h2>
+    
         <canvas id="combinedChart" width="400" height="200"></canvas>
 
         <p><b>This chart provides a comparative analysis of throughput and latency for the Graviton and x86 ElastiCache clusters across various test scenarios.</b></p>
@@ -367,7 +366,7 @@
                 console.error(error);
     
                 if (error.message === 'File not found (404 error)') {
-                    displayMessage('Benchmark still running...');
+                    displayMessage('Benchmark calculations are underway. Refresh the page after 20 minutes to view the results.');
                 } else {
                     displayMessage('Error occurred while fetching data');
                 }
